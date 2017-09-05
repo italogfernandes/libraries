@@ -1,0 +1,3 @@
+led_rgb	KEYWORD1
+acender KEYWORD2
+apagar KEYWORD2
