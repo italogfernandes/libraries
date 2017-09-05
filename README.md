@@ -20,6 +20,24 @@ Bibliotecas gerais que eu desenvolvi ao longo dos meus trabalhos.
 * mpu_calirbation: Biblioteca para calibrar o sensor inercial [Nao testada]
 * **dmp**: Biblioteca para configuração e leitura do sensor inercial.
 
+## More
+
+Outras bibliotecas úteis:
+
+* Biblioteca para sensor inercial no arduino: [I2C Dev Lib](https://github.com/jrowberg/i2cdevlib).
+* Timers no arduino:[Timer.h](https://github.com/JChristensen/Timer) - [SimpleTimer.h](https://github.com/schinken/SimpleTimer) - [DueTimer](https://github.com/ivanseidel/DueTimer).
+* Porta Serial em pinos diferentes (Útil para bluetooth): [SoftwareSerial](https://github.com/PaulStoffregen/SoftwareSerial).
+* Barramento I2C em pinos diferentes: [SoftI2CMaster](https://github.com/felias-fogg/SoftI2CMaster).
+* RFID Arduino RFID Library for MFRC522: [MFRC522](https://github.com/miguelbalboa/rfid).
+* Outras bibliotecas para o nrf: [Creating Applications with the Keil C51 C Compiler](https://www.nordicsemi.com/eng/nordic/download_resource/12804/7/11657752/1515).
+
+Códigos Úteis:
+
+* [MPU6050_calibration](https://github.com/italogfernandes/rastreamento-inercial/blob/master/Codigos%20para%20consulta%20e%20referecias/Firmware/Arduino/MPU6050_calibration/MPU6050_calibration.ino).
+* [MPU6050 e EMG reader](https://github.com/BIOLAB-UFU-BRAZIL/cobec-competicao/blob/master/SistemaDeAquisicao/Arduino_EMG_INERTIAL_Com_Fio/Arduino_EMG_INERTIAL_Com_Fio.ino)
+* [MPU6050 reader](https://github.com/italogfernandes/rastreamento-inercial/blob/master/Codigos%20para%20consulta%20e%20referecias/Firmware/Andrei-pu6050_complete/mpu6050_complete/mpu6050_complete.ino)
+* [I2C Scanner](https://playground.arduino.cc/Main/I2cScanner)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
@@ -31,6 +49,7 @@ notice, you can do whatever you want with this stuff. If we
 meet someday, and you think this stuff is worth it, you can
 buy me a beer in return.
 ```
+
 ## Authors
 
 **Italo Fernandes** - https://github.com/italogfernandes - italogsfernandes@gmail.com
