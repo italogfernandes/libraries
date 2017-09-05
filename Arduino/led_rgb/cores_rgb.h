@@ -1,4 +1,3 @@
-
 //Util: https://www.w3schools.com/colors/default.asp
 
 #define LED_COLOR_OFF     [  0,   0,   0]

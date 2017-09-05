@@ -5,17 +5,20 @@ Bibliotecas gerais que eu desenvolvi ao longo dos meus trabalhos.
 
 ### Arduino
 
-* *led_rgb*: Biblioteca para utilização de leds rgb em 3 portas pwm do arduino. Facilitando a seleção de cores.
+* **led_rgb**: Biblioteca para utilização de leds rgb em 3 portas pwm do arduino. Facilitando a seleção de cores. (As cores implementadas podem ser encontradas no arquivo cores_rgb.h)
+	* Iniciando: led_rgb my_rgb_led(red_pin, green_pin, blue_pin);
+	* Setando Portas: my_rgb_led.led_init();
+	* Acendendo: my_rgb_led.acender(LED_COLOR_BLUE);
 
-* *nrf24le01*: Biblioteca para utilização do modulo RF nrf24le01 com protocolos de comunicação implementados pelo Sergio e eu, útil para utilizar com o shiel do nrf24le01, que desenvolvi.
+* **nrf24le01**: Biblioteca para utilização do modulo RF nrf24le01 com protocolos de comunicação implementados pelo Sergio e eu, útil para utilizar com o shiel do nrf24le01, que desenvolvi.
 
 ### NRF
 
-* *timer0*: Timer.
-* *nRF-SPICommands*: Útil para comunicar com outros módulos, mesmo protocolo da biblioteca para arduino.
+* **timer0**: Timer.
+* **nRF-SPICommands**: Útil para comunicar com outros módulos, mesmo protocolo da biblioteca para arduino.
 * mpu_6050_reg: Resgistradores da unidade inercial MPU6050.
 * mpu_calirbation: Biblioteca para calibrar o sensor inercial [Nao testada]
-* *dmp*: Biblioteca para configuração e leitura do sensor inercial.
+* **dmp**: Biblioteca para configuração e leitura do sensor inercial.
 
 ## License
 
