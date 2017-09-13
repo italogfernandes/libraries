@@ -264,7 +264,7 @@ void RF_IRQ(void) interrupt INTERRUPT_RFIRQ
 /**
  * Inicia a comunicacao RF, apos configura-la ativa todas as interrupcoes e aguarda em RX Mode
  * @param rx_addr      Endereço RX de 5 bytes
- * @param tx_addr      Endereço RX de 5 bytes
+ * @param tx_addr      Endereço TX de 5 bytes
  * @param rf_channel   Valor em MHz a ser somado a 2.4Hz como canal, entre 0 e 125.
  * @param rf_data_rate Velocidade de transmissao nor ar que deseja utilizar
  * @param rf_pwr       Power of the Transmission
