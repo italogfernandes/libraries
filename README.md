@@ -37,6 +37,7 @@ Códigos Úteis:
 * [MPU6050 e EMG reader](https://github.com/BIOLAB-UFU-BRAZIL/cobec-competicao/blob/master/SistemaDeAquisicao/Arduino_EMG_INERTIAL_Com_Fio/Arduino_EMG_INERTIAL_Com_Fio.ino)
 * [MPU6050 reader](https://github.com/italogfernandes/rastreamento-inercial/blob/master/Codigos%20para%20consulta%20e%20referecias/Firmware/Andrei-pu6050_complete/mpu6050_complete/mpu6050_complete.ino)
 * [I2C Scanner](https://playground.arduino.cc/Main/I2cScanner)
+* [HC-06 e HC-05 Bluetooth Setup](https://github.com/italogfernandes/projeto-interdisciplinar/blob/master/setup_bluetooth/setup_bluetooth.ino)
 
 ## License
 
