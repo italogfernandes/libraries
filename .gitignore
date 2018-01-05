@@ -1,3 +1,11 @@
+# Lixo
+*~
+
+# Python
+*.pyc
+*.idea
+
+
 # Prerequisites
 *.d
 
