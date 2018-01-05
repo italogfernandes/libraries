@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RelataLab</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabPassos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="Perfil">
+     <attribute name="title">
+      <string>Perfil</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>761</width>
+        <height>286</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="grid_perfil">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_seletor">
+         <property name="locale">
+          <locale language="Portuguese" country="Brazil"/>
+         </property>
+         <property name="text">
+          <string>Selecione o perfil de usuário ou cadastre um novo:</string>
+         </property>
+         <property name="buddy">
+          <cstring>label_seletor</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="btn_clr_perfil">
+         <property name="locale">
+          <locale language="Portuguese" country="Brazil"/>
+         </property>
+         <property name="text">
+          <string>Limpar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QComboBox" name="seletor_perfil"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btn_cad_perfil">
+         <property name="locale">
+          <locale language="Portuguese" country="Brazil"/>
+         </property>
+         <property name="text">
+          <string>Cadastrar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <layout class="QFormLayout" name="form_perfil">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="form_autor">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="placeholderText">
+            <string>Ex: Joana da Silva</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="matricula">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="text">
+            <string>Número de Matrícula</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="form_matricula">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="placeholderText">
+            <string>Ex: 11511EAA001</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="universidade">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="text">
+            <string>Universidade</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="form_universidade">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="placeholderText">
+            <string>Ex: Universidade Federal de Uberlândia</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="departamento">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="text">
+            <string>Departamento</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="form_departamento">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="placeholderText">
+            <string>Ex: Faculdade de Engenharia Elétrica</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="local">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="text">
+            <string>Local</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="form_local">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="placeholderText">
+            <string>Ex: Uberlândia, Minas Gerais</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="autor">
+           <property name="locale">
+            <locale language="Portuguese" country="Brazil"/>
+           </property>
+           <property name="text">
+            <string>Autor</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btn_prox_perfil">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>300</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(115, 189, 117);
+border-radius:5px;
+color:white;</string>
+      </property>
+      <property name="locale">
+       <locale language="Portuguese" country="Brazil"/>
+      </property>
+      <property name="text">
+       <string>Próximo</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Atributos">
+     <attribute name="title">
+      <string>Atributos</string>
+     </attribute>
+     <widget class="QWidget" name="formLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>761</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="form_atributos">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="titulo">
+         <property name="text">
+          <string>Título</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="form_titulo">
+         <property name="placeholderText">
+          <string>Ex: Lei de Ohm e Resistores</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="data">
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="form_data">
+         <property name="placeholderText">
+          <string>Ex: 19 de Março de 2016</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="disciplina">
+         <property name="text">
+          <string>Disciplina</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="form_disciplina">
+         <property name="placeholderText">
+          <string>Ex: Física II</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="turma">
+         <property name="text">
+          <string>Turma</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="form_turma">
+         <property name="placeholderText">
+          <string>Ex: Turma I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="professor">
+         <property name="text">
+          <string>Professor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="form_professor">
+         <property name="placeholderText">
+          <string>Ex: João da Silva</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="preambulo">
+         <property name="text">
+          <string>Preâmbulo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPlainTextEdit" name="form_preambulo"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btn_prox_atributos">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>300</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(115, 189, 117);
+border-radius:5px;
+color:white;</string>
+      </property>
+      <property name="locale">
+       <locale language="Portuguese" country="Brazil"/>
+      </property>
+      <property name="text">
+       <string>Próximo</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Dados">
+     <attribute name="title">
+      <string>Dados</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>761</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vertical_layout_dados">
+       <item>
+        <widget class="QLabel" name="label_desc_dados">
+         <property name="text">
+          <string>Informe os dados abaixo:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tabela_dados">
+         <property name="rowCount">
+          <number>6</number>
+         </property>
+         <property name="columnCount">
+          <number>2</number>
+         </property>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column>
+          <property name="text">
+           <string>X</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Y</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btn_prox_dados">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>300</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(115, 189, 117);
+border-radius:5px;
+color:white;</string>
+      </property>
+      <property name="locale">
+       <locale language="Portuguese" country="Brazil"/>
+      </property>
+      <property name="text">
+       <string>Próximo</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Conteudo">
+     <attribute name="title">
+      <string>Conteúdo</string>
+     </attribute>
+     <widget class="QPushButton" name="btn_prox_conteudo">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>300</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(115, 189, 117);
+border-radius:5px;
+color:white;</string>
+      </property>
+      <property name="locale">
+       <locale language="Portuguese" country="Brazil"/>
+      </property>
+      <property name="text">
+       <string>Próximo</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="novo"/>
+    <addaction name="salvar"/>
+    <addaction name="separator"/>
+    <addaction name="sair"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="config"/>
+    <addaction name="sobre"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <action name="novo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="salvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="sair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="config">
+   <property name="text">
+    <string>Configurações</string>
+   </property>
+  </action>
+  <action name="sobre">
+   <property name="text">
+    <string>Sobre o RelataLab</string>
+   </property>
+  </action>
+  <action name="actionAdicionar">
+   <property name="text">
+    <string>Adicionar</string>
+   </property>
+  </action>
+  <action name="actionEditar">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabPassos</tabstop>
+  <tabstop>seletor_perfil</tabstop>
+  <tabstop>form_autor</tabstop>
+  <tabstop>form_matricula</tabstop>
+  <tabstop>form_universidade</tabstop>
+  <tabstop>form_departamento</tabstop>
+  <tabstop>form_local</tabstop>
+  <tabstop>btn_cad_perfil</tabstop>
+  <tabstop>btn_clr_perfil</tabstop>
+  <tabstop>btn_prox_perfil</tabstop>
+  <tabstop>form_titulo</tabstop>
+  <tabstop>form_data</tabstop>
+  <tabstop>form_disciplina</tabstop>
+  <tabstop>form_turma</tabstop>
+  <tabstop>form_professor</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
