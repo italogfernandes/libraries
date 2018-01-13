@@ -17,6 +17,8 @@ from matplotlib.lines import Line2D
 
 from ThreadHandler import InfiniteTimer
 from Queue import Queue
+
+from datetime import datetime
 # ------------------------------------------------------------------------------
 
 
@@ -36,6 +38,8 @@ class PyPlotHandler:
         self.configure_plot()
         self.ani = animation.FuncAnimation(self.fig, self.update_y_points,
          init_func=self.init_animation, interval=25, blit=True)
+        self.fps = 0
+        self.lastTime = datetime.now()
 
     def configure_plot(self, title="Plot",x_label="Points",y_label="Values"):
         self.ax.set_xlim(self.x_axis_lim)
@@ -56,8 +60,10 @@ class PyPlotHandler:
         self.plot_buffer.put(item)
 
     def update_y_points(self, frame_counter):
+    	self.calculate_fps()
         points_to_add = self.plot_buffer.qsize()
         if points_to_add > 0:
+            # print points_to_add
             for n in range(points_to_add): # obtains the new values
                 num = self.plot_buffer.get()
                 self.y_values.append(num)
@@ -65,7 +71,14 @@ class PyPlotHandler:
                     self.y_values.pop(0)
             self.line.set_ydata(self.y_values)  # update the data
         return self.line,
-
+    def calculate_fps(self):
+        now = datetime.now()
+        dt = now - self.lastTime
+        dt = dt.seconds + dt.microseconds / 1000000.0
+        self.lastTime = now
+        self.fps = 1.0 / dt
+        print "%4d fps" % int(self.fps)
+            
     def update_points_as_osciloscope(self, frame_counter):
         raise NotImplementedError
         points_to_add = self.plot_buffer.qsize()
@@ -125,7 +138,7 @@ class PyPlotHandler:
         return "Plot: %4d" % (self.plot_buffer.qsize()) + '/' + str(self.plot_buffer.maxsize)
 
 if __name__ == '__main__':
-    my_plot = PyPlotHandler(50, [0, 50, 0, 1])
+    my_plot = PyPlotHandler(50000, [0, 50000, 0, 1])
 
     from datetime import datetime
 
@@ -133,9 +146,9 @@ if __name__ == '__main__':
         agr = datetime.now()
         y_value = agr.microsecond / 1000000.0
         my_plot.put(y_value)
-        print y_value
+        #print y_value
 
-    timer = InfiniteTimer(0.1, generate_point)
+    timer = InfiniteTimer(0, generate_point)
     timer.start()
 
     plt.show()
