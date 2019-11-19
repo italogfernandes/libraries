@@ -11,7 +11,11 @@
 # Decription:
 #------------------------------------------------------------------------------
 
-from Queue import Queue
+import sys
+if sys.version_info.major == 2:
+    from Queue import Queue
+else:
+    from queue import Queue
 from CircularBuffer import CircularBuffer
 
 
@@ -36,22 +40,22 @@ class CircularQueue(Queue):
 if __name__ == '__main__':              # if we're running file directly and not importing it
     myCircularQueue = CircularQueue(4)
     while True:
-        print '-------------------------------'
-        print myCircularQueue.queue
-        print '-------------------------------'
-        print 'Menu'
-        print 'px - put(x) '
-        print 'g - get()'
-        print 'c - clear()'
-        print 'q - Quit'
-        print '-------------------------------'
+        print('-------------------------------')
+        print(myCircularQueue.queue)
+        print('-------------------------------')
+        print('Menu')
+        print('px - put(x) ')
+        print('g - get()')
+        print('c - clear()')
+        print('q - Quit')
+        print('-------------------------------')
         str_key = raw_input()
         if str_key == 'q':
             break
         elif str_key.startswith('p'):
             myCircularQueue.put(str_key[1:], True, 1)
         elif str_key == 'g':
-            print "Result: " + str(myCircularQueue.get(True, 1))
+            print("Result: " + str(myCircularQueue.get(True, 1)))
         elif str_key == 'c':
             myCircularQueue.queue.clear()
 

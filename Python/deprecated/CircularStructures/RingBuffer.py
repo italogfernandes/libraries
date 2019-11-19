@@ -56,22 +56,22 @@ class RingBufferFull(RingBuffer):
 if __name__ == '__main__':
     myCircularBuffer = RingBuffer(5)
     while True:
-        print '-------------------------------'
-        print myCircularBuffer
-        print '-------------------------------'
-        print 'Menu'
-        print 'px - put(x) '
-        print 'g - get()'
-        print 'c - clear()'
-        print 'q - Quit'
-        print '-------------------------------'
+        print('-------------------------------')
+        print(myCircularBuffer)
+        print('-------------------------------')
+        print('Menu')
+        print('px - put(x) ')
+        print('g - get()')
+        print('c - clear()')
+        print('q - Quit')
+        print('-------------------------------')
         str_key = raw_input()
         if str_key == 'q':
             break
         elif str_key.startswith('p'):
             myCircularBuffer.put(str_key[1:])
         elif str_key == 'g':
-            print "Result: " + str(myCircularBuffer.get())
+            print("Result: " + str(myCircularBuffer.get()))
         elif str_key == 'c':
             myCircularBuffer.clear()
 

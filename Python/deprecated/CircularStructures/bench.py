@@ -73,7 +73,7 @@ repeat_func = 'a.get()'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('Queue')
 
-'''
+
 # CircularQueue
 setup_func = 'from CircularQueue import  CircularQueue; a = CircularQueue(maxsize=%d);' % qnt_vezes
 repeat_func = 'a.put(1.0)'
@@ -82,8 +82,8 @@ setup_func = setup_func + '[a.put(1.0) for n in range(%d)];' % qnt_vezes
 repeat_func = 'a.get()'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('CircularQueue')
-'''
-'''
+
+
 # Deque
 setup_func = 'from collections import deque; a = deque(maxlen=%d);' % qnt_vezes
 repeat_func = 'a.append(1.0)'
@@ -93,9 +93,9 @@ repeat_func = 'a.popleft()'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('deque')
 
-'''
 
-'''
+
+
 # Circular Buffer
 setup_func = 'from CircularBuffer import  CircularBuffer; a = CircularBuffer(maxsize=%d);' % qnt_vezes
 repeat_func = 'a.put(1.0)'
@@ -104,9 +104,8 @@ setup_func = setup_func + '[a.put(1.0) for n in range(%d)];' % qnt_vezes
 repeat_func = 'a.get()'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('CircularBuffer')
-'''
 
-'''
+
 # npCircularBuffer
 setup_func = 'from npCircularBuffer import  CircularBuffer; a = CircularBuffer(maxsize=%d);' % qnt_vezes
 repeat_func = 'a.put(1.0)'
@@ -115,9 +114,8 @@ setup_func = setup_func + '[a.put(1.0) for n in range(%d)];' % qnt_vezes
 repeat_func = 'a.get()'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('npCircularBuffer')
-'''
 
-'''
+
 # Ring Buffer
 setup_func = 'from RingBuffer import  RingBuffer; a = RingBuffer(size_max=%d);' % qnt_vezes
 repeat_func = 'a.put(1.0)'
@@ -126,8 +124,7 @@ setup_func = setup_func + '[a.put(1.0) for n in range(%d)];' % qnt_vezes
 repeat_func = 'a.get()'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('npRingBuffer')
-'''
-'''
+
 # Array
 setup_func = 'a = [];'
 repeat_func = 'a.append(1.0)'
@@ -136,7 +133,7 @@ setup_func = setup_func + '[a.append(1.0) for n in range(%d)];' % qnt_vezes
 repeat_func = 'a.pop(0)'
 get_times.append(timeit(repeat_func, setup_func, number=qnt_vezes))
 names.append('Array')
-'''
+
 
 # put_times = [1, 2, 3]
 # get_times = [1.1, 2.2, 3.3]
